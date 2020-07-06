@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 import datetime
+
 from decouple import config
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -41,6 +42,12 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'rest_framework_jwt',
+    'drf_yasg',
+
+    'cars',
+    'accounts',
+    'marcas',
+    'customers',
 ]
 
 MIDDLEWARE = [
@@ -73,7 +80,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'test01.wsgi.application'
 
-
+AUTH_USER_MODEL = 'accounts.User'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 

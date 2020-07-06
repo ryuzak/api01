@@ -11,6 +11,7 @@ python-decouple = "*"
 djangorestframework = "*"
 pillow = "*"
 djangorestframework-jwt = "*"
+drf-yasg = "*"
 
 [requires]
 python_version = "3.6"
